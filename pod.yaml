@@ -1,0 +1,25 @@
+apiVersion:	v1
+kind: Pod
+metadata: 
+	name: meupod-azul
+	labels:
+		cor: azul
+spec:
+	containers:
+	- name: site
+		image: nathaliapaulon/web-page:blue
+    ports:
+    - containerPort: 80
+---
+apiVersion:	v1
+kind: Pod
+metadata: 
+	name: meupod-roxo
+	labels:
+		cor: roxo
+spec:
+	containers:
+	- name: site
+		image: nathaliapaulon/web-page:blue
+    ports:
+    - containerPort: 80
